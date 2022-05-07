@@ -13,22 +13,12 @@ public class StringMethods {
         }
     }
 
-    public static int longerLength(String input1, String input2) {
-        int count1 = 0;
-        int count2 = 0;
-        for (int i = 0; i < input1.length(); i = i + 1) {
+      public static int longerLength(String word1, String word2) {
+        int length1 = word1.length();
+        int length2 = word2.length();
 
 
-            count1++;
-
-        }
-        for (int i = 0; i < input2.length(); i = i + 1) {
-
-
-            count2++;
-
-        }
-        return Math.max(count1, count2);
+        return Math.max(length1, length2);
     }
 
     public static String lastNChars(String characters, int n) {
